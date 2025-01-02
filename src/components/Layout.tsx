@@ -8,7 +8,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
     return (
-        <div className='flex-col'>
+        <div className='flex flex-col min-h-screen'>
             <Header />
             {children}
             <Footer />
