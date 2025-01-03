@@ -1,5 +1,4 @@
 import SearchBar from "./SearchBar"
-import { Card } from "./ui/card"
 
 const Mentorship = () => {
   return (
