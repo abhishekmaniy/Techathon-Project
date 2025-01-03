@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import features from "../lib/features";
 import image from "./../assets/in-c869-p03-1280px_0.jpg";
 import FeaturesCard from "./FeaturesCard";
+import { SeparatorHorizontal } from "lucide-react";
 
 const Hero = () => {
     return (
         <>
             <div className="flex items-center justify-center flex-grow bg-black-100">
+                <SeparatorHorizontal/>
                 <img
                     src={image}
                     alt="Hero Background"
