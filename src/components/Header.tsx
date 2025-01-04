@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 const Header = () => {
     const location = useLocation();
     const isRoot = location.pathname === '/';
-    const { loginWithRedirect, user, logout, isAuthenticated } = useAuth0()
+    const { loginWithRedirect, user,logout ,  isAuthenticated } = useAuth0()
 
     return (
         <header
@@ -17,7 +17,9 @@ const Header = () => {
                 <div className='flex gap-2 rounded-md border-white border-2 p-2' >English <ChevronDown /> </div>
                 {
                     isAuthenticated
-                        ? <div><img src={user?.picture} alt="" /></div>
+                        ? <div><img src={user?.picture} alt="" />
+                        <Button className='bg-black border-white border-2 ' onClick={async () => await logout()} >Logout</Button>
+                            </div>
                         : <Button onClick={async () => await loginWithRedirect()} className='text-white font-bold border-white border-2 text-xl hover:bg-white duration-300 hover:text-black rounded-md p-2' >Login</Button>
 
                 }
