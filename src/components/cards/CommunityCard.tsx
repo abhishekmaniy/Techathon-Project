@@ -1,5 +1,5 @@
 import { Users, MapPin, Calendar } from 'lucide-react';
-import image from "../assets/in-c869-p03-1280px_0.jpg"
+import image from "../../assets/in-c869-p03-1280px_0.jpg"
 
 type CommunityType = {
     id: string;

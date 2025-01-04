@@ -1,4 +1,4 @@
-import MentorCard from "./MentorCard"
+import MentorCard from "./cards/MentorCard"
 import SearchBar from "./SearchBar"
 
 const Mentorship = () => {

@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import image from "../assets/in-c869-p03-1280px_0.jpg"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card"
+import image from "../../assets/in-c869-p03-1280px_0.jpg"
 import { Dot } from "lucide-react"
 
 const BusinessTemplateCard = () => {

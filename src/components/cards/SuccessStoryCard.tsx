@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
-import image from "../assets/in-c869-p03-1280px_0.jpg"
-import { Button } from "./ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card"
+import image from "../../assets/in-c869-p03-1280px_0.jpg"
+import { Button } from "../ui/button"
 
 const SuccessStoryCard = () => {
     return (

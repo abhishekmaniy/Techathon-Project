@@ -1,5 +1,5 @@
 import { ChevronsDown } from 'lucide-react'
-import FundOppertunityCard from './FundOppertunityCard'
+import FundOppertunityCard from './cards/FundOppertunityCard'
 import SearchBar from './SearchBar'
 
 const FundOppertunity = () => {

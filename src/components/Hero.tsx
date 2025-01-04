@@ -1,14 +1,18 @@
-import { Link } from "react-router-dom";
 import features from "../lib/features";
 import image from "./../assets/in-c869-p03-1280px_0.jpg";
-import FeaturesCard from "./FeaturesCard";
+import FeaturesCard from "./cards/FeaturesCard";
 import { SeparatorHorizontal } from "lucide-react";
+import { Button } from "./ui/button";
+import { useAuth0 } from "@auth0/auth0-react"
 
 const Hero = () => {
+
+    const { loginWithRedirect } = useAuth0();
+
     return (
         <>
             <div className="flex items-center justify-center flex-grow bg-black-100">
-                <SeparatorHorizontal/>
+                <SeparatorHorizontal />
                 <img
                     src={image}
                     alt="Hero Background"
@@ -22,9 +26,9 @@ const Hero = () => {
                     <p className="text-lg mb-8">
                         A platform where dreams meet opportunities: get inspired by success stories, guided by mentors, and supported through resources to achieve your goals.
                     </p>
-                    <Link to="/home" className="text-2xl font-bold py-3 px-6 rounded-md bg-black hover:bg-white hover:text-black transition-colors duration-300">
+                    <Button onClick={async () => loginWithRedirect()} className="text-2xl font-bold p-6 rounded-md bg-black hover:bg-white hover:text-black transition-colors duration-300">
                         Get Started
-                    </Link>
+                    </Button>
                 </div>
             </div>
 

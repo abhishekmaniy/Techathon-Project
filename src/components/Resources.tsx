@@ -1,9 +1,9 @@
 import { ChevronsDown } from "lucide-react"
-import BusinessTemplateCard from "./BusinessTemplateCard"
-import InvestorCard from "./InvestorCard"
-import MarketingStratergyCard from "./MarketingStratergyCard"
+import MarketingStratergyCard from "./cards/MarketingStratergyCard"
 import SearchBar from "./SearchBar"
 import { Separator } from "./ui/separator"
+import InvestorCard from "./cards/InvestorCard"
+import BusinessTemplateCard from "./cards/BusinessTemplateCard"
 
 const Resources = () => {
     return (

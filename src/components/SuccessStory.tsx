@@ -1,4 +1,4 @@
-import SuccessStoryCard from "./SuccessStoryCard"
+import SuccessStoryCard from "./cards/SuccessStoryCard"
 import { Separator } from "./ui/separator"
 
 const SuccessStory = () => {

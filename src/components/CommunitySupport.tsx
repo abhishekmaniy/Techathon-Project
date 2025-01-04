@@ -1,4 +1,4 @@
-import CommunityCard from "./CommunityCard";
+import CommunityCard from "./cards/CommunityCard";
 import SearchBar from "./SearchBar";
 import communities from "../lib/community";
 import { SeparatorHorizontal } from "lucide-react";
