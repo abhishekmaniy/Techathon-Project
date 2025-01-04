@@ -6,6 +6,8 @@ import Mentorship from "./components/Mentorship";
 import CommunitySupport from "./components/CommunitySupport";
 import BusinessSections from "./components/BusinessSections";
 import Courses from "./components/Courses";
+import ExpenseTracker from "./components/ExpenseTeacker";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -34,6 +36,14 @@ function App() {
         <Route
           path="/courses"
           element={<Layout><Courses /> </Layout>}
+        />
+        <Route
+          path="/expensetracker"
+          element={<Layout><ExpenseTracker/> </Layout>}
+        />
+        <Route
+          path="/about-us"
+          element={<Layout><AboutUs/> </Layout>}
         />
       </Routes>
     </BrowserRouter>

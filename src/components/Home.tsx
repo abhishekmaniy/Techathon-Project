@@ -28,11 +28,11 @@ const Home = () => {
                         className="rounded-2xl relative overflow-hidden bg-cover bg-center px-6 py-3 text-white transition-all duration-300 ease-in-out group w-full h-full"
                     >
                         <div className="flex flex-col gap-4" >
-                        <span className="text-lg sm:text-xl lg:text-2xl font-bold rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300">
-                            Mentorship
-                        </span>
-                        <span className="text-sm rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300"  >
-                        Empower Your Growth with Expert Mentorship
+                            <span className="text-lg sm:text-xl lg:text-2xl font-bold rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300">
+                                Mentorship
+                            </span>
+                            <span className="text-sm rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300"  >
+                                Empower Your Growth with Expert Mentorship
                             </span>
                         </div>
                         <span className="absolute inset-0 bg-black opacity-75 transition-opacity duration-300 ease-in-out group-hover:opacity-0"></span>
@@ -43,9 +43,14 @@ const Home = () => {
                         style={{ backgroundImage: `url(${image})` }}
                         className="rounded-2xl relative overflow-hidden bg-cover bg-center px-6 py-3 text-white transition-all duration-300 ease-in-out group w-full h-full"
                     >
-                        <span className="text-lg sm:text-xl lg:text-2xl font-bold rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300">
-                            Business Sections
-                        </span>
+                        <div className="flex flex-col gap-4">
+                            <span className="text-lg sm:text-xl lg:text-2xl font-bold rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300">
+                                Business Sections
+                            </span>
+                            <span className="text-sm rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300">
+                                Fuel Your Business Dreams with Resources, Connections, and Opportunities.
+                            </span>
+                        </div>
                         <span className="absolute inset-0 bg-black opacity-75 transition-opacity duration-300 ease-in-out group-hover:opacity-0"></span>
                     </button>
                 </Link>
@@ -54,31 +59,42 @@ const Home = () => {
                         style={{ backgroundImage: `url(${image})` }}
                         className="rounded-2xl relative overflow-hidden bg-cover bg-center px-6 py-3 text-white transition-all duration-300 ease-in-out group w-full h-full"
                     >
-                        <span className="text-lg sm:text-xl lg:text-2xl font-bold relative z-10 group-hover:opacity-75 transition-opacity duration-300">
-                            Courses
-                        </span>
+                        <div className="flex flex-col gap-4" >
+                            <span className="text-lg sm:text-xl lg:text-2xl font-bold relative z-10 group-hover:opacity-75 transition-opacity duration-300">
+                                Courses
+                            </span>
+                            <span className="text-sm rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300" >
+                                Unlock Your Potential with Expert-Led Courses
+                            </span>
+                        </div>
                         <span className="absolute inset-0 bg-black opacity-75 transition-opacity duration-300 ease-in-out group-hover:opacity-0"></span>
                     </button>
                 </Link>
-                <Link to="/mentorship" className="w-full h-full">
+                <Link to="/expensetracker" className="w-full h-full">
                     <button
                         style={{ backgroundImage: `url(${image})` }}
                         className="rounded-2xl relative overflow-hidden bg-cover bg-center px-6 py-3 text-white transition-all duration-300 ease-in-out group w-full h-full"
                     >
-                        <span className="text-lg sm:text-xl lg:text-2xl font-bold relative z-10 group-hover:opacity-75 transition-opacity duration-300">
-                            Button Text
-                        </span>
+                        <div className="flex flex-col gap-4" >
+                            <span className="text-lg sm:text-xl lg:text-2xl font-bold relative z-10 group-hover:opacity-75 transition-opacity duration-300">
+                                Expense Tracker & Budgeting Tool
+                            </span>
+                            <span className="text-sm rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300">Take Control of Your Finances</span>
+                        </div>
                         <span className="absolute inset-0 bg-black opacity-75 transition-opacity duration-300 ease-in-out group-hover:opacity-0"></span>
                     </button>
                 </Link>
-                <Link to="/mentorship" className="w-full h-full">
+                <Link to="/about-us" className="w-full h-full">
                     <button
                         style={{ backgroundImage: `url(${image})` }}
                         className="rounded-2xl relative overflow-hidden bg-cover bg-center px-6 py-3 text-white transition-all duration-300 ease-in-out group w-full h-full"
                     >
-                        <span className="text-lg sm:text-xl lg:text-2xl font-bold relative z-10 group-hover:opacity-75 transition-opacity duration-300">
-                            Button Text
-                        </span>
+                        <div className="flex flex-col gap-4 " >
+                            <span className="text-lg sm:text-xl lg:text-2xl font-bold relative z-10 group-hover:opacity-75 transition-opacity duration-300">
+                                About Us
+                            </span>
+                            <span className="text-sm rounded-2xl relative z-10 group-hover:opacity-75 transition-opacity duration-300">Empowering Woman with Innovation and Passion</span>
+                        </div>
                         <span className="absolute inset-0 bg-black opacity-75 transition-opacity duration-300 ease-in-out group-hover:opacity-0"></span>
                     </button>
                 </Link>
