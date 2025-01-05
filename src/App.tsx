@@ -6,7 +6,7 @@ import Mentorship from "./components/Mentorship";
 import CommunitySupport from "./components/CommunitySupport";
 import BusinessSections from "./components/BusinessSections";
 import Courses from "./components/Courses";
-import ExpenseTracker from "./components/ExpenseTeacker";
+import ExpenseTracker from "./components/ExpenseTracker";
 import AboutUs from "./components/AboutUs";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
         element={<Layout><Courses /> </Layout>}
       />
       <Route
-        path="/expensetracker"
+        path="/expense-tracker"
         element={<Layout><ExpenseTracker /> </Layout>}
       />
       <Route

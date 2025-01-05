@@ -2,6 +2,7 @@ import { ChevronDown } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react"
 import { Button } from './ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 const Header = () => {
     const location = useLocation();
@@ -17,7 +18,11 @@ const Header = () => {
                 <div className='flex gap-2 rounded-md border-white border-2 p-2' >English <ChevronDown /> </div>
                 {
                     isAuthenticated
-                        ? <div className='flex' >
+                        ? <div className='flex items-center gap-2 ' >
+                            <Avatar>
+                                <AvatarImage src={user?.picture} />
+                                <AvatarFallback>CN</AvatarFallback>
+                            </Avatar>
                             <div>{user?.name}</div>
                             <Button className='bg-black border-white border-2 ' onClick={async () => await logout()} >Logout</Button>
                         </div>

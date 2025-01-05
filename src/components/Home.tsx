@@ -70,7 +70,7 @@ const Home = () => {
                         <span className="absolute inset-0 bg-black opacity-75 transition-opacity duration-300 ease-in-out group-hover:opacity-0"></span>
                     </button>
                 </Link>
-                <Link to="/expensetracker" className="w-full h-full">
+                <Link to="/expense-tracker" className="w-full h-full">
                     <button
                         style={{ backgroundImage: `url(${image})` }}
                         className="rounded-2xl relative overflow-hidden bg-cover bg-center px-6 py-3 text-white transition-all duration-300 ease-in-out group w-full h-full"
