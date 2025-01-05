@@ -5,9 +5,11 @@ import Home from "./components/Home";
 import Mentorship from "./components/Mentorship";
 import CommunitySupport from "./components/CommunitySupport";
 import BusinessSections from "./components/BusinessSections";
-import Courses from "./components/Courses";
 import ExpenseTracker from "./components/ExpenseTracker";
 import AboutUs from "./components/AboutUs";
+import Courses from "./page/Courses";
+import CourseContent from "./components/coursesComponents/CourseContent";
+import CreateCourse from "./components/coursesComponents/CreateCourse";
 
 function App() {
   return (
@@ -37,12 +39,20 @@ function App() {
         element={<Layout><Courses /> </Layout>}
       />
       <Route
+        path="/courses/:id"
+        element={<Layout><CourseContent/> </Layout>}
+      />
+      <Route
         path="/expense-tracker"
         element={<Layout><ExpenseTracker /> </Layout>}
       />
       <Route
         path="/about-us"
         element={<Layout><AboutUs /> </Layout>}
+      />
+      <Route
+        path="/create-course"
+        element={<Layout><CreateCourse /> </Layout>}
       />
     </Routes>
   );
